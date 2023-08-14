@@ -37,9 +37,19 @@ app.get("/pokemons", (req, res)=>{
   res.render("Index", { pokemons: pokemons });
 })
 
-app.get("/pokemons/:id" ,(req, res)=>{
-  res.send(req.params.id);
+app.get("/pokemons/:id",(req, res)=>{
+  res.render("Show", {
+    pokemons: pokemons[req.params.id]
+  });
 })
+
+
+// app.get("/pokemons/:id", async (req, res) => {
+//   const eachPokemon = await Pokemons.findById(req.params.id);
+//   res.render("Show", {
+//       pokemon: eachPokemons,
+//   });
+// });
 
 
 

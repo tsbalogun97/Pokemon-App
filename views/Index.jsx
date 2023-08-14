@@ -18,12 +18,12 @@ function Index(props) {
           // return <p>{rest_of_the_name}</p>;
           return (
             <p>
-              <a href={`/pokemon/${i}`}>{rest_of_the_name}</a>
+              <a href={`/pokemons/${i}`}>{rest_of_the_name}</a>
             </p>
           );
         })}
-      </h1>
-     
+      </h1> 
+    
 
       
     </>
