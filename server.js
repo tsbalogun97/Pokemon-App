@@ -1,4 +1,4 @@
-const pokemon = require("./models/pokemon");
+const pokemons = require("./models/pokemon");
 // importing pokemon.js from models
 
 const express = require("express");
@@ -33,8 +33,8 @@ app.get("/", (req, res) => {
   res.send("<h1>Welcome to Pokemon App!</h1>");
 });
 
-app.get("/pokemon", (req, res)=>{
-  res.render("Index")
+app.get("/pokemons", (req, res)=>{
+  res.render("Index", { pokemons: pokemons });
 })
 
 
