@@ -37,6 +37,10 @@ app.get("/pokemons", (req, res)=>{
   res.render("Index", { pokemons: pokemons });
 })
 
+app.get("/pokemons/:id" ,(req, res)=>{
+  res.send(req.params.id);
+})
+
 
 
 
