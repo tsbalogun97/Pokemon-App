@@ -11,11 +11,14 @@ function Show(props) {
     <>
       <div>
         <h1>Gotta Catch 'Em All</h1>
+
+        <a href="/pokemons" style={myStyle}>
+          Back
+        </a>
       </div>
 
       <h1>{pokemons.name}</h1>
-      <img src={pokemons.img + ".jpg"} style={myStyle} />
-      
+      <img src={pokemons.img +".jpg"} style={myStyle} />
     </>
   );
 }
